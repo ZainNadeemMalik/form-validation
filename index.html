@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <script src="script.js" defer></script>
+
+  <form novalidate class="form">
+    <p>
+      <label for="mail">
+        <span>Please enter an email address:</span>
+        <input type="email" id="mail" name="mail" required minlength="8" />
+        <span class="error error-mail" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="country">
+        <span>Select your country:</span>
+        <select name="country" id="select-country" required>
+          <option value="" disabled selected>Select Country</option>
+          <option value="country1">Country 1</option>
+          <option value="country2">Country 2</option>
+        </select>
+        <span class="error error-country"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="zipcode">
+        <span>Enter Zip Code:</span>
+        <input type="text" id="zipcode" name="zipcode"  required>
+        <span class="error error-zipcode" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="password">
+        <span>Enter Password:</span>
+        <input type="password" id="password" name="password" required minlength="8" maxlength="32">
+        <span class="error error-password" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="confirm-password">
+        <span>Confirm Password:</span>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span class="error error-confirm-password" aria-live="polite"></span>
+      </label>
+    </p>
+    <button type="submit">Submit</button>
+  </form>
+  
+</body>
+</html>
